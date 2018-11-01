@@ -11,7 +11,10 @@ public:
 	void allocate(int w, int h, int d, int internalGlDataType) override;
 
 	using ofxTexture::loadData;
+    
+    int getNumLayers();
 
 protected:
+    
 	void loadData(const void * data, int w, int h, int d, int xOffset, int yOffset, int zOffset, int glFormat) override;
 };

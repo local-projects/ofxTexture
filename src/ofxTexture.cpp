@@ -205,3 +205,13 @@ void ofxTexture::setMinMagFilters(GLenum min, GLenum mag){
 	glTexParameterf(texData.textureTarget, GL_TEXTURE_MIN_FILTER, texData.minFilter);
 	unbind();
 }
+
+int ofxTexture::getWidth()
+{
+    return texData.tex_w;
+}
+
+int ofxTexture::getHeight()
+{
+    return texData.tex_h;
+}

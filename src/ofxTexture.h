@@ -70,6 +70,9 @@ public:
 	void setMinMagFilters(GLenum min, GLenum mag);
 
 	ofxTextureData texData;
+    
+    int getWidth();
+    int getHeight();
 
 protected:
 	virtual void loadData(const void * data, int w, int h, int d, int xOffset, int yOffset, int zOffset, int glFormat) = 0;
